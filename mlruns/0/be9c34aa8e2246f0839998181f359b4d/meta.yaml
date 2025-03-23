@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/Mlaas/mlruns/0/be9c34aa8e2246f0839998181f359b4d/artifacts
+end_time: 1741369511518
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: be9c34aa8e2246f0839998181f359b4d
+run_name: sneaky-skink-760
+run_uuid: be9c34aa8e2246f0839998181f359b4d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741369507349
+status: 3
+tags: []
+user_id: Annish

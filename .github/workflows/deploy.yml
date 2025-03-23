@@ -1,0 +1,50 @@
+name: MLaaS CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Runs this workflow when changes are pushed to the main branch
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo (Full Clone)
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fix shallow clone issue
+
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install Dependencies
+        run: pip install -r api/requirement.txt
+
+      - name: Run Tests
+        run: pytest tests/test.py
+        # || echo "No tests found"
+
+  deploy:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git for Hugging Face
+        run: |
+          git config --global user.email "annishjk01@gmail.com"
+          git config --global user.name "annishjk01"
+
+      - name: Deploy to Hugging Face Spaces
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}  # Use secure Hugging Face token
+        run: |
+          git remote add huggingface https://user:$HF_TOKEN@huggingface.co/spaces/annishjk01/firstSpace || true
+          git fetch huggingface main || true  # Fetch latest changes from HF (ignore errors)
+          git push --force huggingface main
