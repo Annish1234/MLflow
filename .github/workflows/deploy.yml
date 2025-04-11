@@ -2,12 +2,12 @@ name: MLaaS CI/CD Pipeline
 
 on:
   push:
-    paths:
-      - 'creditcard_10k_balanced.csv'
-      - 'model/train.py'
-      - 'api/**'
-      - 'tests/**'
-      - '.github/workflows/deploy.yml'
+    # paths:
+    #   - 'creditcard_10k_balanced.csv'
+    #   - 'model/train.py'
+    #   - 'api/**'
+    #   - 'tests/**'
+    #   - '.github/workflows/deploy.yml'
     branches:
       - main
 
