@@ -42,7 +42,7 @@ class Transaction(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"status": "App is running!", "message": "Welcome to my FastAPI project on Hugging Face!"}
+    return {"status": "App is running!", "message": "Welcome to Credit Card fraud detection!"}
 
 @app.post("/predict/")
 def predict(data: list[Transaction]):
