@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/c5e31b7667b54c0f900ddfa97c05c2e0/artifacts
+end_time: 1744341077318
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: c5e31b7667b54c0f900ddfa97c05c2e0
+run_name: capricious-bass-944
+run_uuid: c5e31b7667b54c0f900ddfa97c05c2e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744341077130
+status: 3
+tags: []
+user_id: Annish

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/7826ebf9043246a3b9061ad341b425b6/artifacts
+end_time: 1743843303563
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 7826ebf9043246a3b9061ad341b425b6
+run_name: awesome-sponge-855
+run_uuid: 7826ebf9043246a3b9061ad341b425b6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743843303364
+status: 3
+tags: []
+user_id: Annish

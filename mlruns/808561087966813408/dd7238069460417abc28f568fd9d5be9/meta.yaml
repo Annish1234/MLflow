@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/dd7238069460417abc28f568fd9d5be9/artifacts
+end_time: 1744340645891
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: dd7238069460417abc28f568fd9d5be9
+run_name: monumental-hare-163
+run_uuid: dd7238069460417abc28f568fd9d5be9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744340644534
+status: 3
+tags: []
+user_id: Annish

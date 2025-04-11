@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/Mlaas/mlruns/0/149d830f04264620bf6f2616798037ed/artifacts
+end_time: 1741369540135
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 149d830f04264620bf6f2616798037ed
+run_name: mercurial-jay-523
+run_uuid: 149d830f04264620bf6f2616798037ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741369536110
+status: 3
+tags: []
+user_id: Annish

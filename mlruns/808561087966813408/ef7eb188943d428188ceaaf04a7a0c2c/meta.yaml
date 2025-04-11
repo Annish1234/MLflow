@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/ef7eb188943d428188ceaaf04a7a0c2c/artifacts
+end_time: 1744341176098
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: ef7eb188943d428188ceaaf04a7a0c2c
+run_name: rebellious-chimp-503
+run_uuid: ef7eb188943d428188ceaaf04a7a0c2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744341174780
+status: 3
+tags: []
+user_id: Annish

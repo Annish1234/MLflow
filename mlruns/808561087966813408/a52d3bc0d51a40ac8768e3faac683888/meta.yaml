@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/a52d3bc0d51a40ac8768e3faac683888/artifacts
+end_time: 1743840152982
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: a52d3bc0d51a40ac8768e3faac683888
+run_name: classy-hound-562
+run_uuid: a52d3bc0d51a40ac8768e3faac683888
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743834108724
+status: 3
+tags: []
+user_id: Annish

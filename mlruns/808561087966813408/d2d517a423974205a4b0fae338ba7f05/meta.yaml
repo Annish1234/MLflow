@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/d2d517a423974205a4b0fae338ba7f05/artifacts
+end_time: 1743862900042
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: d2d517a423974205a4b0fae338ba7f05
+run_name: sneaky-lark-108
+run_uuid: d2d517a423974205a4b0fae338ba7f05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743862899333
+status: 3
+tags: []
+user_id: Annish

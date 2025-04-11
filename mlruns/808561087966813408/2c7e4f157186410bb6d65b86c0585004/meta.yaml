@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/2c7e4f157186410bb6d65b86c0585004/artifacts
+end_time: 1743843303348
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 2c7e4f157186410bb6d65b86c0585004
+run_name: caring-ant-484
+run_uuid: 2c7e4f157186410bb6d65b86c0585004
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743843302518
+status: 3
+tags: []
+user_id: Annish

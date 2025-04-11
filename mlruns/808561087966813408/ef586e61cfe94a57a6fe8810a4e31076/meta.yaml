@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/ef586e61cfe94a57a6fe8810a4e31076/artifacts
+end_time: 1743843132964
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: ef586e61cfe94a57a6fe8810a4e31076
+run_name: agreeable-trout-697
+run_uuid: ef586e61cfe94a57a6fe8810a4e31076
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743843132801
+status: 3
+tags: []
+user_id: Annish

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/8e63c0eb10b24c21ad30524811390352/artifacts
+end_time: 1744341082349
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 8e63c0eb10b24c21ad30524811390352
+run_name: learned-carp-604
+run_uuid: 8e63c0eb10b24c21ad30524811390352
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744341077388
+status: 3
+tags: []
+user_id: Annish

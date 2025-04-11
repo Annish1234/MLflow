@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/69d6500cd4814eaab4f10a31d42059a7/artifacts
+end_time: 1744341181579
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 69d6500cd4814eaab4f10a31d42059a7
+run_name: big-kite-434
+run_uuid: 69d6500cd4814eaab4f10a31d42059a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744341176543
+status: 3
+tags: []
+user_id: Annish

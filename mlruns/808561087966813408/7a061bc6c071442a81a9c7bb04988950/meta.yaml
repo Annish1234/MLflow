@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/7a061bc6c071442a81a9c7bb04988950/artifacts
+end_time: 1743863029338
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 7a061bc6c071442a81a9c7bb04988950
+run_name: capricious-horse-498
+run_uuid: 7a061bc6c071442a81a9c7bb04988950
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743863027896
+status: 3
+tags: []
+user_id: Annish

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/46de1c51f43e4e7f963aa114a18782b3/artifacts
+end_time: 1743843235672
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 46de1c51f43e4e7f963aa114a18782b3
+run_name: indecisive-newt-289
+run_uuid: 46de1c51f43e4e7f963aa114a18782b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743843235492
+status: 3
+tags: []
+user_id: Annish

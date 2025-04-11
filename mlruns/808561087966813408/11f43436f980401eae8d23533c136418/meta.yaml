@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/11f43436f980401eae8d23533c136418/artifacts
+end_time: 1744379824980
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 11f43436f980401eae8d23533c136418
+run_name: bedecked-fawn-993
+run_uuid: 11f43436f980401eae8d23533c136418
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744379819791
+status: 3
+tags: []
+user_id: Annish

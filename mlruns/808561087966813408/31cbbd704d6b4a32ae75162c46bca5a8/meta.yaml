@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/31cbbd704d6b4a32ae75162c46bca5a8/artifacts
+end_time: 1744339490413
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 31cbbd704d6b4a32ae75162c46bca5a8
+run_name: melodic-penguin-957
+run_uuid: 31cbbd704d6b4a32ae75162c46bca5a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744339485873
+status: 3
+tags: []
+user_id: Annish

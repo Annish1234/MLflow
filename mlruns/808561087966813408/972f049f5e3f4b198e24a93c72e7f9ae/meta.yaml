@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/972f049f5e3f4b198e24a93c72e7f9ae/artifacts
+end_time: 1743843235486
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 972f049f5e3f4b198e24a93c72e7f9ae
+run_name: unruly-carp-30
+run_uuid: 972f049f5e3f4b198e24a93c72e7f9ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743843234720
+status: 3
+tags: []
+user_id: Annish

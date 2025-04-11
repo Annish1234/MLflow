@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/791a1f9f58bb4ebcb9f8264f0e5b31ad/artifacts
+end_time: 1744339786044
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 791a1f9f58bb4ebcb9f8264f0e5b31ad
+run_name: popular-panda-147
+run_uuid: 791a1f9f58bb4ebcb9f8264f0e5b31ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744339780947
+status: 3
+tags: []
+user_id: Annish

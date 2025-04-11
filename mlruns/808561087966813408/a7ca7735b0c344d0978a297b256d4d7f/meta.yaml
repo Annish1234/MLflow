@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/a7ca7735b0c344d0978a297b256d4d7f/artifacts
+end_time: 1744339780881
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: a7ca7735b0c344d0978a297b256d4d7f
+run_name: awesome-toad-882
+run_uuid: a7ca7735b0c344d0978a297b256d4d7f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744339780698
+status: 3
+tags: []
+user_id: Annish

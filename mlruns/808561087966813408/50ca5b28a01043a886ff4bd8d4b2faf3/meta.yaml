@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/50ca5b28a01043a886ff4bd8d4b2faf3/artifacts
+end_time: 1743843266382
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 50ca5b28a01043a886ff4bd8d4b2faf3
+run_name: wistful-chimp-466
+run_uuid: 50ca5b28a01043a886ff4bd8d4b2faf3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743843266087
+status: 3
+tags: []
+user_id: Annish

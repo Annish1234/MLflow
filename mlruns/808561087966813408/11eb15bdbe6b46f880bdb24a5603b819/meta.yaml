@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/11eb15bdbe6b46f880bdb24a5603b819/artifacts
+end_time: 1743862900256
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 11eb15bdbe6b46f880bdb24a5603b819
+run_name: whimsical-perch-202
+run_uuid: 11eb15bdbe6b46f880bdb24a5603b819
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743862900056
+status: 3
+tags: []
+user_id: Annish

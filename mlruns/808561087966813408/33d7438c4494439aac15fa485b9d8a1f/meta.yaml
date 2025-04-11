@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/33d7438c4494439aac15fa485b9d8a1f/artifacts
+end_time: 1744379819294
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: 33d7438c4494439aac15fa485b9d8a1f
+run_name: dazzling-dog-184
+run_uuid: 33d7438c4494439aac15fa485b9d8a1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744379817918
+status: 3
+tags: []
+user_id: Annish

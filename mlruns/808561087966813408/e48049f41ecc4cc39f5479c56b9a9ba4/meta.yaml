@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/e48049f41ecc4cc39f5479c56b9a9ba4/artifacts
+end_time: 1743957205620
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: e48049f41ecc4cc39f5479c56b9a9ba4
+run_name: industrious-asp-260
+run_uuid: e48049f41ecc4cc39f5479c56b9a9ba4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743863045393
+status: 3
+tags: []
+user_id: Annish

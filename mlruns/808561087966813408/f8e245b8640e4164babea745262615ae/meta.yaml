@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/f8e245b8640e4164babea745262615ae/artifacts
+end_time: 1743834085912
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: f8e245b8640e4164babea745262615ae
+run_name: defiant-shark-232
+run_uuid: f8e245b8640e4164babea745262615ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743834085845
+status: 3
+tags: []
+user_id: Annish

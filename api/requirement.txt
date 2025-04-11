@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pytest
+pydantic
+joblib
+numpy
+scikit-learn
+mlflow
+lightgbm

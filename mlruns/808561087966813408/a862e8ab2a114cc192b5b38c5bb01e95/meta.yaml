@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/a862e8ab2a114cc192b5b38c5bb01e95/artifacts
+end_time: 1743834105978
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: a862e8ab2a114cc192b5b38c5bb01e95
+run_name: shivering-shark-582
+run_uuid: a862e8ab2a114cc192b5b38c5bb01e95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743834105926
+status: 3
+tags: []
+user_id: Annish

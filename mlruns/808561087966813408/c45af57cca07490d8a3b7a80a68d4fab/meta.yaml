@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Annish/Documents/MLflow/mlruns/808561087966813408/c45af57cca07490d8a3b7a80a68d4fab/artifacts
+end_time: 1744340646096
+entry_point_name: ''
+experiment_id: '808561087966813408'
+lifecycle_stage: active
+run_id: c45af57cca07490d8a3b7a80a68d4fab
+run_name: welcoming-pug-126
+run_uuid: c45af57cca07490d8a3b7a80a68d4fab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744340645897
+status: 3
+tags: []
+user_id: Annish
