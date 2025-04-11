@@ -1,6 +1,10 @@
 # Use Python 3.9 as the base image
 FROM python:3.9-slim
 
+# Install system dependencies
+USER root
+RUN apt-get update && apt-get install -y libgomp1 && rm -rf /var/lib/apt/lists/*
+
 # Create a non-root user
 RUN useradd -m -u 1000 user
 USER user
