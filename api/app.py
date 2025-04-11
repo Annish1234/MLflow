@@ -40,6 +40,10 @@ class Transaction(BaseModel):
     V28: float
     Amount: float
 
+@app.get("/")
+def read_root():
+    return {"status": "App is running!", "message": "Welcome to my FastAPI project on Hugging Face!"}
+
 @app.post("/predict/")
 def predict(data: list[Transaction]):
     # Convert input list of Transaction to DataFrame
