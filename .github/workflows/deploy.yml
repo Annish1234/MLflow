@@ -37,6 +37,7 @@ jobs:
             pytest tests/test.py
           else
             echo "No test file found. Skipping tests."
+          fi
 
   deploy:
     needs: train-and-test
