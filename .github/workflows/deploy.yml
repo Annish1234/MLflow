@@ -35,7 +35,7 @@ jobs:
       - name: Run Tests
         run: |
           if [ -f "tests/test.py" ]; then
-            pytest tests/test.py
+            pytest -s tests/test.py
           else
             echo "No test file found. Skipping tests."
           fi
