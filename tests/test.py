@@ -46,9 +46,48 @@ sample_input = [
         "Amount": 10.7
     }
 ]
+# 1. Valid prediction test
 
 def test_predict_endpoint():
     response = client.post("/predict/", json=[sample_input[0]])
     print("Response JSON:", response.json())  
     assert response.status_code == 200
     assert "prediction" in response.json()
+
+#  2. Test empty input
+def test_predict_empty_input():
+    response = client.post("/predict/", json=[])
+    print("Empty Input Response:", response.json())
+    assert response.status_code in [400, 422]
+
+#  3. Missing field test
+def test_predict_missing_field():
+    incomplete_input = sample_input[0].copy()
+    del incomplete_input["V1"]
+    response = client.post("/predict/", json=[incomplete_input])
+    print("Missing Field Response:", response.json())
+    assert response.status_code == 422
+
+#  4. Invalid data type test
+def test_predict_invalid_type():
+    invalid_input = sample_input[0].copy()
+    invalid_input["Amount"] = "invalid"
+    response = client.post("/predict/", json=[invalid_input])
+    print("Invalid Type Response:", response.json())
+    assert response.status_code == 422
+
+#  5. GET root endpoint test
+def test_read_root():
+    response = client.get("/")
+    print("Root Response:", response.json())
+    assert response.status_code == 200
+    assert response.json()["status"] == "App is running!"
+
+#  6. Multiple records test
+def test_predict_multiple_inputs():
+    inputs = [sample_input[0], sample_input[0]]
+    response = client.post("/predict/", json=inputs)
+    print("Multiple Input Response:", response.json())
+    assert response.status_code == 200
+    assert isinstance(response.json()["prediction"], list)
+    assert len(response.json()["prediction"]) == 2

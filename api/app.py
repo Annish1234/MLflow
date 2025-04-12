@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request, HTTPException
 from pydantic import BaseModel
 import joblib
 import numpy as np
@@ -46,8 +46,11 @@ def read_root():
 
 @app.post("/predict/")
 def predict(data: list[Transaction]):
+    if len(data) == 0:
+        raise HTTPException(status_code=400, detail="Input list is empty")
     # Convert input list of Transaction to DataFrame
-    df = pd.DataFrame([d.dict() for d in data])
+    # df = pd.DataFrame([item.dict() for item in data])
+    df = pd.DataFrame([item.model_dump() for item in data])
     
     # Scale the data
     transformed = scaler.transform(df)
