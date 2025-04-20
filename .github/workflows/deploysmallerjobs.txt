@@ -2,12 +2,6 @@ name: MLaaS CI/CD Pipeline
 
 on:
   push:
-    # paths:
-    #   - 'creditcard_10k_balanced.csv'
-    #   - 'model/train.py'
-    #   - 'api/**'
-    #   - 'tests/**'
-    #   - '.github/workflows/deploy.yml'
     branches:
       - main
 
@@ -25,6 +19,14 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: "3.9"
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirement.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
       - name: Install Dependencies
         run: pip install -r api/requirement.txt
@@ -49,6 +51,22 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirement.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install Dependencies
+        run: pip install -r api/requirement.txt
 
       - name: Configure Git for Hugging Face
         run: |
