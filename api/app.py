@@ -2,7 +2,10 @@ from fastapi import FastAPI, Request, HTTPException
 from pydantic import BaseModel
 import joblib
 import numpy as np
+import os
 import pandas as pd
+from model.visualizations import generate_visual_report
+from fastapi.responses import FileResponse
 
 app = FastAPI()
 model = joblib.load("model/best_model.pkl")
@@ -51,10 +54,16 @@ def predict(data: list[Transaction]):
     # Convert input list of Transaction to DataFrame
     # df = pd.DataFrame([item.dict() for item in data])
     df = pd.DataFrame([item.model_dump() for item in data])
-    
-    # Scale the data
     transformed = scaler.transform(df)
-    
-    # Make predictions
     prediction = model.predict(transformed)
     return {"prediction": prediction.tolist()}
+
+@app.get("/download-report")
+def download_report():
+    report_path = "visual_report.pdf"
+
+    # Generate report if it doesn't exist
+    if not os.path.exists(report_path):
+        generate_visual_report()
+
+    return FileResponse(path=report_path, filename="visual_report.pdf", media_type='application/pdf')
