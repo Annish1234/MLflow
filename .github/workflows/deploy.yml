@@ -6,11 +6,8 @@ on:
       - main
 
 jobs:
-  checkout:
-    name: Checkout Repository
+  train-and-test:
     runs-on: ubuntu-latest
-    outputs:
-      repo_path: ${{ steps.set-repo-path.outputs.repo_path }}
     steps:
       - name: Checkout Repo (Full Clone)
         uses: actions/checkout@v3
@@ -18,69 +15,24 @@ jobs:
           fetch-depth: 0
           lfs: true
 
-      - name: Set Repo Path Output
-        id: set-repo-path
-        run: echo "::set-output name=repo_path::$(pwd)"
-
-  setup-python:
-    name: Setup Python & Install Dependencies
-    needs: checkout
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          lfs: true
-
       - name: Set Up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.9"
 
-      - name: Install Dependencies
-        run: pip install -r api/requirement.txt
-
-  train-model:
-    name: Train the Model
-    needs: setup-python
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
+      - name: Cache pip dependencies
+        uses: actions/cache@v3
         with:
-          fetch-depth: 0
-          lfs: true
-
-      - name: Set Up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.9"
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirement.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
 
       - name: Install Dependencies
         run: pip install -r api/requirement.txt
 
-      - name: Train Model
+      - name: Train the Model
         run: python model/train.py
-
-  run-tests:
-    name: Run Tests
-    needs: train-model
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          lfs: true
-
-      - name: Set Up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.9"
-
-      - name: Install Dependencies
-        run: pip install -r api/requirement.txt
 
       - name: Run Tests
         run: |
@@ -91,8 +43,7 @@ jobs:
           fi
 
   deploy:
-    name: Deploy to Hugging Face
-    needs: run-tests
+    needs: train-and-test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -100,6 +51,22 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirement.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install Dependencies
+        run: pip install -r api/requirement.txt
 
       - name: Configure Git for Hugging Face
         run: |
