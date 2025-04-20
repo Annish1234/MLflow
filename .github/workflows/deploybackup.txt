@@ -48,3 +48,73 @@ jobs:
           git remote add huggingface https://user:$HF_TOKEN@huggingface.co/spaces/annishjk01/firstSpace || true
           git fetch huggingface main || true  # Fetch latest changes from HF (ignore errors)
           git push --force huggingface main
+
+
+
+
+20-aprl-25
+
+name: MLaaS CI/CD Pipeline
+
+on:
+  push:
+    # paths:
+    #   - 'creditcard_10k_balanced.csv'
+    #   - 'model/train.py'
+    #   - 'api/**'
+    #   - 'tests/**'
+    #   - '.github/workflows/deploy.yml'
+    branches:
+      - main
+
+jobs:
+  train-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo (Full Clone)
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install Dependencies
+        run: pip install -r api/requirement.txt
+
+      - name: Train the Model
+        run: python model/train.py
+
+      - name: Run Tests
+        run: |
+          if [ -f "tests/test.py" ]; then
+            pytest -s tests/test.py
+          else
+            echo "No test file found. Skipping tests."
+          fi
+
+  deploy:
+    needs: train-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Configure Git for Hugging Face
+        run: |
+          git config --global user.email "annishjk01@gmail.com"
+          git config --global user.name "annishjk01"
+
+      - name: Deploy to Hugging Face Spaces
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git remote add huggingface https://user:$HF_TOKEN@huggingface.co/spaces/annishjk01/Project_N2 || true
+          git fetch huggingface main || true
+          git push --force huggingface main
