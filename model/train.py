@@ -16,6 +16,11 @@ df = pd.read_csv(os.path.join(base_dir, "creditcard_10k_balanced.csv"))
 X = df.iloc[:, :-1]
 y = df.iloc[:, -1]
 
+X = X.applymap(lambda x: str(x).replace(" ", ""))  
+X = X.apply(pd.to_numeric, errors='coerce') 
+
+X = X.fillna(X.mean()) 
+
 # 3. Split
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, stratify=y, test_size=0.2, random_state=42
