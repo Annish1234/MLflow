@@ -3,8 +3,10 @@ uvicorn[standard]
 pytest
 pydantic
 joblib
+matplotlib
 numpy
 scikit-learn==1.5.2
 mlflow
+seaborn
 lightgbm
 httpx
