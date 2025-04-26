@@ -9,7 +9,7 @@ from fastapi.responses import FileResponse
 
 app = FastAPI()
 model = joblib.load("model/best_model.pkl")
-scaler = joblib.load("model/scaler.pkl")  # Make sure you saved this during training
+scaler = joblib.load("model/scaler.pkl")  
 
 class Transaction(BaseModel):
     Time: float

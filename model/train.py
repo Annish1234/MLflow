@@ -47,9 +47,6 @@ for name, model in {
     preds = model.predict(X_test)
 
     acc = accuracy_score(y_test, preds)
-    prec = precision_score(y_test, preds, average="macro")
-    rec = recall_score(y_test, preds, average="macro")
-    f1 = f1_score(y_test, preds, average="macro")
 
     # Display only accuracy
     print(f"{name} accuracy: {acc:.4f}")
