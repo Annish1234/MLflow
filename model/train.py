@@ -48,7 +48,7 @@ for name, model in {
 
     acc = accuracy_score(y_test, preds)
 
-    # Display only accuracy
+    # Display only accurac
     print(f"{name} accuracy: {acc:.4f}")
 
     if acc > best_score:
