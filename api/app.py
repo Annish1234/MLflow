@@ -51,7 +51,8 @@ def read_root():
 def predict(data: list[Transaction]):
     if len(data) == 0:
         raise HTTPException(status_code=400, detail="Input list is empty")
-    # Convert input list of Transaction to DataFrame
+    # Convert input list of Transaction to DataFrame 
+    #new change
     # df = pd.DataFrame([item.dict() for item in data])
     df = pd.DataFrame([item.model_dump() for item in data])
     transformed = scaler.transform(df)
